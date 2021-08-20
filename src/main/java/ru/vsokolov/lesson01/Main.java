@@ -1,14 +1,21 @@
-package homework01_MainJavaClassesAndPackages;
+package ru.vsokolov.lesson01;
 
+import ru.vsokolov.lesson01.converter.CelsiusConverter;
+import ru.vsokolov.lesson01.shape.*;
+import ru.vsokolov.lesson01.sort.BubbleSort;
+
+/**
+ * Hello world!
+ */
 public class Main {
-
     public static void main(String[] args) {
 // Сортировка пузырьком
         System.out.println("Задание №1 - Сортировка пузырьком");
 
-        BubbleSort sort = new BubbleSort(10);
-        sort.insertElement();
-        sort.arraysSort();
+        int[] array = new int[10];
+
+        BubbleSort.insertElement(array);
+        BubbleSort.arraysSort(array);
 
 // Иерархия объектов Circle, Rectangle, Triangle, Square
         System.out.println();
@@ -25,7 +32,8 @@ public class Main {
 /* Реализовать конвертеры температуры. Считаем, что значения будут поступать по шкале Цельсия,
 конвертеры должны преобразовывать значение в свою шкалу */
         CelsiusConverter celsiusConverter = new CelsiusConverter();
-        System.out.println("температура 40 градусов по Цельсию равна температуре " + celsiusConverter.convertCelsiusToFahrenheit(40) + "по Фаренгейту");
-        System.out.println("температура 40 градусов по Цельсию равна температуре " + celsiusConverter.convertCelsiusToKelvin(40) + "по Кельвину");
+        int temp = -300;
+        System.out.println("температура " + temp + " градусов по Цельсию равна температуре " + celsiusConverter.convertCelsiusToFahrenheit(temp) + " по Фаренгейту");
+        System.out.println("температура " + temp + " градусов по Цельсию равна температуре " + celsiusConverter.convertCelsiusToKelvin(temp) + " по Кельвину");
     }
 }

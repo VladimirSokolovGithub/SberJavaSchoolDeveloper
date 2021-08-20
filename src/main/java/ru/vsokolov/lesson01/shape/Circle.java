@@ -1,4 +1,4 @@
-package homework01_MainJavaClassesAndPackages;
+package ru.vsokolov.lesson01.shape;
 
 public class Circle extends Shape {
     private static final String name = "Круг";

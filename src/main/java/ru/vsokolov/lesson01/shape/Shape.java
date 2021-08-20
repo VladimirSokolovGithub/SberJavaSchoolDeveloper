@@ -1,4 +1,4 @@
-package homework01_MainJavaClassesAndPackages;
+package ru.vsokolov.lesson01.shape;
 
 public abstract class Shape {
     public abstract double getSquare();
