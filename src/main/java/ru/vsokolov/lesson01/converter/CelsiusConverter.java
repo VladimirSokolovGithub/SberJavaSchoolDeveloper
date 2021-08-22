@@ -6,8 +6,8 @@ public class CelsiusConverter {
         if(celsius<273.15){
             System.out.println("warning: введена несуществующая температура");
         }
-        double TF = (9 / 5) * celsius + 32;
-        return TF;
+        double tF = (9 / 5) * celsius + 32;
+        return tF;
     }
 
     public double convertCelsiusToKelvin(double celsius) {

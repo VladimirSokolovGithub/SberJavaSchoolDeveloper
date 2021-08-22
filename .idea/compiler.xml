@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SberJavaSchoolDeveloper" target="1.7" />
+      <module name="SberJavaSchoolDeveloper" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
