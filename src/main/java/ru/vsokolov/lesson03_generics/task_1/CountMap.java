@@ -1,4 +1,4 @@
-package ru.vsokolov.lesson03_generics;
+package ru.vsokolov.lesson03_generics.task_1;
 
 import java.util.Map;
 
